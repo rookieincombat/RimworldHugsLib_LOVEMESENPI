@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -171,7 +171,7 @@ namespace HugsLib.Utils {
 		}
 
 		private static void EnsureEndsWithSpace(StringBuilder builder) {
-			if (builder[builder.Length - 1] != ' ') {
+			if (builder[^1]!= ' ') {
 				builder.Append(" ");
 			}
 		}
